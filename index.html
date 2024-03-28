@@ -12,11 +12,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        /* height: 100vh; */
       }
 
       .custom-image {
-        width: 180px;
+        width: 200px;
         height: auto;
       }
 
@@ -38,14 +37,34 @@
       }
 
       .blinking-text {
-        animation: blink 1s infinite;
+        animation: blink 4s infinite;
+      }
+
+      /* CSS to change text color to white and button hover effect */
+      .navbar-nav .nav-link {
+        color: #fff !important; /* Change text color to white */
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #343a40 !important; /* Change text color to dark when hovered */
+        background-color: #fff; /* Change background color to white when hovered */
+      }
+
+      .footer {
+        margin-top: 0; /* Hapus margin-top */
+        padding-top: 0; /* Hapus padding-top */
+        background-color: #343a40; /* Warna latar belakang */
+      }
+
+      .footer span {
+        color: #fff; /* Warna teks */
       }
     </style>
   </head>
   <body>
     <section id="navbar"></section>
 
-    <div class="mt-5 bg-primary-subtle">
+    <div class="mt-5 bg-secondary" style="padding: 0 20px 50px 20px">
       <div class="container-fluid pt-4 pb-2">
         <div class="row">
           <div class="text-center mb-4">
@@ -53,34 +72,93 @@
           </div>
           <div class="col-md-6 offset-md-3 center-image">
             <!-- Gambar yang responsif -->
-            <img src="./assets/image/profile-title.png" class="img-fluid custom-image rounded-circle custom-border" alt="Gambar Anda" />
+            <img src="./assets/image/profile.jpg" class="img-fluid custom-image rounded-circle custom-border" alt="Profile" />
           </div>
         </div>
       </div>
-      <div>
-        <h1 class="text-center">Najmul Azka</h1>
+      <div class="text-center">
+        <h1>Najmul Azka</h1>
+        <p class="lead" style="font-weight: 400">Backend Developer</p>
+
+        <p class="lead mt-3" style="font-weight: 400; text-align: justify">
+          Saya adalah mahasiswa di Universitas Amikom Purwokerto yang berdedikasi dan memiliki semangat yang tinggi. Saat ini saya sedang menjalani program yang diadakan oleh kampus merdeka di PT Permodalan Nasional Madani sebagai Support
+          Aplication. Saya memiliki kemampuan untuk membangun dan mengelola web server secara efisien.
+        </p>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="card custom-border">
-              <div class="card-body">
+    </div>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="container mt-3">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tech Academy</h5>
+              <div style="text-align: justify">
+                <p class="card-text">Tech Academy merupakan platform berbasis web yang menyediakan konten pembelajaran yang dapat diakses secara gratis atau langganan.</p>
                 <p>
-                  Saya adalah seorang mahasiswa di Universitas Amikom Purwokerto yang berdedikasi dan memiliki semangat yang tinggi. Saat ini saya sedang mengikuti program Studi Independen Batch 5 di Binar Academy dengan course Backend
-                  Javascript menggunakan Node js. Saya memiliki rasa ingin tahu dan minat yang sangat dalam untuk menjadi seorang Backend dan memiliki kemampuan untuk beradaptasi di tempat baru serta memiliki kemampuan untuk berkolaborasi
-                  secara tim.
+                  Halaman admin <a href="https://tech-academy-v2.vercel.app/admin/login">click</a> (admin@gmail.com, admin)
+                  <br />
+                  Disini saya sebagai Backend Developer dengan tech stack yang digunakan yaitu : Express.js, PostgreSQL, ORM Prisma, Imagekit, postman, vercel
+                  <br />
+                  <strong>Note :</strong><em> Data yang terdapat di dalamnya merupakan data dummy</em>
                 </p>
               </div>
+
+              <a href="https://tech-academy-v2.vercel.app/" class="btn btn-primary">Lihat Project</a>
+              <a href="https://www.postman.com/lively-meadow-65589/workspace/project/collection/25209459-ff9e2bca-1038-432f-9c5e-8411d1e7b2db?action=share&creator=25209459" class="btn btn-primary">Documentasi API</a>
+              <a href="https://github.com/najmulazka/tech-academy-api" class="btn btn-primary">Lihat code</a>
             </div>
           </div>
         </div>
       </div>
 
-      <section id="footer"></section>
-    </div>
+      <div class="row">
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cepat Dana</h5>
+              <div style="text-align: justify">
+                <p class="card-text">Cepat Dana merupakan aplikasi berbasis mobile yang menyediakan peminjaman secara online.</p>
+                <p>
+                  Disini saya sebagai Backend Developer dengan tech stack yang digunakan yaitu : Express.js, PostgreSQL, ORM Prisma, Imagekit, postman, vercel.
+                  <br />
+                  <strong>Note :</strong> <em>Aplikasi ini masih dalam pembangunan.</em>
+                </p>
+              </div>
+
+              <a href="#" class="btn btn-primary">Lihat Project</a>
+              <a href="#" class="btn btn-primary">Documentasi API</a>
+              <a href="#" class="btn btn-primary">Lihat code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+      </form>
+    </section>
+
+    <section id="footer"></section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
     <script>
       $(document).ready(function () {
         $('#navbar').load('./layouts/navbar.html');
