@@ -40,24 +40,33 @@
         animation: blink 4s infinite;
       }
 
-      /* CSS to change text color to white and button hover effect */
       .navbar-nav .nav-link {
-        color: #fff !important; /* Change text color to white */
+        color: #fff !important;
       }
 
       .navbar-nav .nav-link:hover {
-        color: #343a40 !important; /* Change text color to dark when hovered */
-        background-color: #fff; /* Change background color to white when hovered */
+        color: #343a40 !important;
+        background-color: #fff;
       }
 
       .footer {
-        margin-top: 0; /* Hapus margin-top */
-        padding-top: 0; /* Hapus padding-top */
-        background-color: #343a40; /* Warna latar belakang */
+        margin-top: 0;
+        padding-top: 0;
+        background-color: #343a40;
       }
 
       .footer span {
-        color: #fff; /* Warna teks */
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #6eb1d6;
       }
     </style>
   </head>
@@ -106,9 +115,9 @@
                 </p>
               </div>
 
-              <a href="https://tech-academy-v2.vercel.app/" class="btn btn-primary" target="_blank">Lihat Project</a>
-              <a href="https://www.postman.com/lively-meadow-65589/workspace/project/documentation/25209459-ff9e2bca-1038-432f-9c5e-8411d1e7b2db" class="btn btn-primary" target="_blank">Documentasi API</a>
-              <a href="https://github.com/najmulazka/tech-academy-api" class="btn btn-primary" target="_blank">Lihat code</a>
+              <a href="https://tech-academy-v2.vercel.app/" class="btn btn-primary" target="_blank">Project</a>
+              <a href="https://www.postman.com/lively-meadow-65589/workspace/project/documentation/25209459-ff9e2bca-1038-432f-9c5e-8411d1e7b2db" class="btn btn-primary" target="_blank">Doc API</a>
+              <a href="https://github.com/najmulazka/tech-academy-api" class="btn btn-primary" target="_blank">Code</a>
             </div>
           </div>
         </div>
@@ -128,9 +137,9 @@
                 </p>
               </div>
 
-              <a href="#" class="btn btn-primary" target="_blank">Lihat Project</a>
-              <a href="https://www.postman.com/lively-meadow-65589/workspace/project/documentation/25209459-8bbad9b7-22e4-4c54-98ed-a49bb8264695" target="_blank" class="btn btn-primary">Documentasi API</a>
-              <a href="https://github.com/najmulazka/cepat-dana-api" target="_blank" class="btn btn-primary">Lihat code</a>
+              <a href="#" class="btn btn-primary" target="">Project</a>
+              <a href="https://www.postman.com/lively-meadow-65589/workspace/project/documentation/25209459-8bbad9b7-22e4-4c54-98ed-a49bb8264695" target="_blank" class="btn btn-primary">Doc API</a>
+              <a href="https://github.com/najmulazka/cepat-dana-api" target="_blank" class="btn btn-primary">Code</a>
             </div>
           </div>
         </div>
@@ -138,34 +147,151 @@
     </section>
 
     <!-- Pengalaman -->
-    <section id="Pengalaman">
-      <div class="mt-3 bg-secondary" style="padding: 25px 20px 25px 20px">
-        <div class="container">
-          <h2>Pengalaman</h2>
-          <p class="lead mt-3" style="font-weight: 400; text-align: justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, vitae harum cupiditate rem quaerat praesentium vero fugiat necessitatibus autem, nemo tempora ab aliquam illum aut ducimus, at earum tenetur. Molestias?
-          </p>
+    <!-- <div class="mt-5 bg-secondary" style="padding: 0 20px 50px 20px"> -->
+    <section id="experience" class="container mt-5">
+      <h2>Experience</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Support Application (Internship)</h5>
+              <h6 class="card-subtitle mb-2 text-muted">PT Permodalan Nasional Madani</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolores accusantium. Quae, at? Illum fuga labore perspiciatis ratione temporibus porro ex totam numquam doloribus? Quod voluptate excepturi earum ea
+                consequuntur!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Forum Asisten Praktikum</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Universitas Amikom Purwokerto</h6>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem alias sapiente accusamus mollitia! Voluptates, sequi eos a odit nemo molestiae, veritatis qui ullam iure reprehenderit, excepturi voluptatem! Modi, odit
+                accusamus?.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+
+    <!-- Skills -->
+    <section id="skills" class="container mt-5">
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <h5>Programming Languages & Frameworks</h5>
+          <ul class="list-group">
+            <li class="list-group-item">JavaScript (Node.js)</li>
+            <li class="list-group-item">Go (Gin)</li>
+          </ul>
+          <h5>Database</h5>
+          <ul class="list-group">
+            <li class="list-group-item">MySQL</li>
+            <li class="list-group-item">PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <h5>Tools & Others</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Git & Version Control</li>
+            <li class="list-group-item">RESTful API Design</li>
+            <li class="list-group-item">Testing (Jest, Postman)</li>
+            <li class="list-group-item">Deployment (Railway, Vercel)</li>
+            <li class="list-group-item">Debuging & Logging (Sentry.io)</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Najmul Azka" disabled />
+    <!-- Documentation -->
+    <section id="documentation" class="container mt-5">
+      <h2>Documentations</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="./assets/image/foto1.JPG" class="card-img-top" alt="Image 1" />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="najmulazka225@gmail.com" disabled />
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="./assets/image/foto2.JPG" class="card-img-top" alt="Image 2" />
+          </div>
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea class="form-control" id="message" rows="3"></textarea>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="./assets/image/foto3.JPG" class="card-img-top" alt="Image 3" />
+          </div>
         </div>
-        <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-      </form>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="./assets/image/foto4.JPG" class="card-img-top" alt="Image 3" />
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="./assets/image/foto5.JPG" class="card-img-top" alt="Image 3" />
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <img src="./assets/image/foto6.JPG" class="card-img-top" alt="Image 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container mt-5">
+      <h2 class="text-center mb-4">Contacts</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3">
+          <div class="contact-item text-center">
+            <i class="bi bi-instagram"></i>
+            <h4>Instagram</h4>
+            <p><a href="https://www.instagram.com/najmul_azka " target="_blank">@najmul_azka</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item text-center">
+            <i class="bi bi-linkedin"></i>
+            <h4>LinkedIn</h4>
+            <p><a href="https://www.linkedin.com/in/najmulazka" target="_blank">najmulazka</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item text-center">
+            <i class="bi bi-whatsapp"></i>
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.me/+6285326694486" target="_blank">+6285326694486</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item text-center">
+            <i class="bi bi-github"></i>
+            <h4>GitHub</h4>
+            <p><a href="https://github.com/najmulazka" target="_blank">@najmulazka</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item text-center">
+            <i class="bi bi-globe"></i>
+            <h4>Website</h4>
+            <p><a href="https://yourwebsite.com" target="_blank">najmulazka.github.io/web-profile</a></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="contact-item text-center">
+            <i class="bi bi-globe"></i>
+            <h4>Gmail</h4>
+            <p><a href="mailto:najmulazka225@gmail.com" target="_blank">najmulazka225@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="footer"></section>
